@@ -1,0 +1,125 @@
+body {
+    font-family: Gotham Pro;
+    justify-content: center;
+    text-transform: uppercase;
+    height: auto;
+    background: black;
+    color: white
+}
+
+.logo-div {
+    width: auto;
+    height: 100vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    animation-duration: 3s;
+    animation-name: slidein;
+    
+    width: auto;
+    height: 812px;
+}
+
+@keyframes slidein {
+    from {
+        top -300px;
+        opacity: 0%;
+    }
+    
+    to {
+      top: 300px;
+      opacity: 100%;  
+    }
+}
+
+.color1 {
+    animation-duration: 1.5s;
+    animation-name: opacity1;
+    
+    position: absolute;
+    width: 1000px;
+    height: 1000px;
+    left: 133px;
+    top: 771px;
+
+    background: rgba(255, 0, 153, 0.67);
+    filter: blur(500px);
+    opacity: 20%;
+    
+    border-radius: 500px;
+}
+
+.color2 {
+    animation-duration: 1.5s;
+    animation-name: opacity2;
+
+    position: absolute;
+    width: 1000px;
+    height: 1000px;
+    left: 1338px;
+    top: -451px;
+
+    background: rgba(255, 0, 153, 0.67);
+    filter: blur(1000px);
+    opacity: 50%;
+    
+    border-radius: 500px;
+}
+
+@keyframes opacity1 {
+    from {
+        top -300px;
+        opacity: 0%;
+    }
+    
+    to {
+        top: 771px;
+        opacity: 20%;
+    }
+}
+
+@keyframes opacity2 {
+    from {
+        top -800px;
+        opacity: 0%;
+    }
+    
+    to {
+        top: -451px;
+        opacity: 50%;
+    }
+}
+
+.main-text {
+    display: flex;
+    justify-content: center;
+}
+
+.text {
+    text-align: center;
+    width: 1035px;
+    height: auto;
+    
+}
+
+.intro-text {
+    opacity: 50%;
+}
+
+.photo-content {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    
+    margin: 5%;
+}
+
+.screenshot {
+    width: 1035px;
+    height: auto;
+}
